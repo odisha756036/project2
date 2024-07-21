@@ -18,10 +18,11 @@ RUN dnf -y update && \
 
 # Download and extract website templa
 WORKDIR /var/www/html
-RUN wget  https://www.free-css.com/assets/files/free-css-templates/download/page294/jobentry.zip
-RUN unzip jobentry.zip
-RUN     mv /var/www/html/job-portal-website-template/* /var/www/html/ && \
+RUN wget  https://www.free-css.com/assets/files/free-css-templates/download/page296/little-fashion.zip
+RUN unzip little-fashion.zip
+RUN     mv /var/www/html/little-fashion/2127_little_fashion/* /var/www/html/ && \
         rm -rf  *.zip \
-        rm -rf job-portal-website-template
+        rm -rf 
+        rm -rf 2127_little_fashion
 CMD     ["/usr/sbin/httpd", "-D", "FOREGROUND"]
 EXPOSE  80

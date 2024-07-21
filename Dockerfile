@@ -20,7 +20,7 @@ RUN dnf -y update && \
 WORKDIR /var/www/html
 RUN wget  https://www.free-css.com/assets/files/free-css-templates/download/page296/little-fashion.zip
 RUN unzip little-fashion.zip
-RUN     mv /var/www/html/little-fashion/2127_little_fashion/* /var/www/html/ && \
+RUN     mv /var/www/html/2127_little_fashion/* /var/www/html/ && \
         rm -rf  *.zip \
         rm -rf 
         rm -rf 2127_little_fashion

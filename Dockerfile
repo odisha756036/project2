@@ -22,6 +22,6 @@ RUN wget  https://www.free-css.com/assets/files/free-css-templates/download/page
 RUN unzip healet.zip
 RUN     mv /var/www/html/healet-html/* /var/www/html/ && \
         rm -rf  *.zip \
-        rm -rf 2127_little_fashion
+        rm -rf healet-html
 CMD     ["/usr/sbin/httpd", "-D", "FOREGROUND"]
 EXPOSE  80

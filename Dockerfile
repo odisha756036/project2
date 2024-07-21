@@ -22,7 +22,6 @@ RUN wget  https://www.free-css.com/assets/files/free-css-templates/download/page
 RUN unzip little-fashion.zip
 RUN     mv /var/www/html/2127_little_fashion/* /var/www/html/ && \
         rm -rf  *.zip \
-        rm -rf 
         rm -rf 2127_little_fashion
 CMD     ["/usr/sbin/httpd", "-D", "FOREGROUND"]
 EXPOSE  80

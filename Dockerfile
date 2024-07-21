@@ -18,9 +18,9 @@ RUN dnf -y update && \
 
 # Download and extract website templa
 WORKDIR /var/www/html
-RUN wget  https://www.free-css.com/assets/files/free-css-templates/download/page296/little-fashion.zip
-RUN unzip little-fashion.zip
-RUN     mv /var/www/html/2127_little_fashion/* /var/www/html/ && \
+RUN wget  https://www.free-css.com/assets/files/free-css-templates/download/page296/healet.zip
+RUN unzip healet.zip
+RUN     mv /var/www/html/healet-html/* /var/www/html/ && \
         rm -rf  *.zip \
         rm -rf 2127_little_fashion
 CMD     ["/usr/sbin/httpd", "-D", "FOREGROUND"]

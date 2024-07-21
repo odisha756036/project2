@@ -18,10 +18,10 @@ RUN dnf -y update && \
 
 # Download and extract website templa
 WORKDIR /var/www/html
-RUN wget  https://www.free-css.com/assets/files/free-css-templates/download/page296/healet.zip
-RUN unzip healet.zip
-RUN     mv /var/www/html/healet-html/* /var/www/html/ && \
+RUN wget  https://www.free-css.com/assets/files/free-css-templates/download/page294/primecare.zip
+RUN unzip primecare.zip
+RUN     mv /var/www/html/primecare-html/* /var/www/html/ && \
         rm -rf  *.zip \
-        rm -rf healet-html
+        rm -rf primecare-html
 CMD     ["/usr/sbin/httpd", "-D", "FOREGROUND"]
 EXPOSE  80
